@@ -26,7 +26,7 @@ function Weather() {
     )
       .then((res) => res.json())
       .then((body) => {
-        setWeather(res.body.current);
+        setWeather(body.current);
         console.log(body);
       });
   }
